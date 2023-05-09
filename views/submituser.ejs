@@ -1,0 +1,12 @@
+<%- include("templates/header") %> 
+    <h1>The following fields are missing:</h1>
+    <% if (missingFields.length > 0) { %>
+      <ul>
+        <% missingFields.forEach(field => { %>
+          <li><%= field %></li>
+        <% }); %>
+      </ul>
+    <% } %>
+    <a href="/signup">Try again</a>    
+
+    <%- include("templates/footer") %> 

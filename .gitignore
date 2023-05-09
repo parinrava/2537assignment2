@@ -1,6 +1,4 @@
-.DS_Store
-*.logs
-node_modules/
-.vscode/
+
+/node_modules
 package-lock.json
 .env

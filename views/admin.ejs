@@ -1,0 +1,19 @@
+<%- include("templates/header") %> 
+	<div>Users:</div>
+    <ul>
+        <% let i=0; %>
+		<% for(i=0; i < users.length; i++) { %>
+
+
+        
+
+         <h2>name <%= users[i].name %></h2>
+         <p> user Type: <%= users[i].user_type %></p>
+         <form method="POST" action="/updateUserType/<%= users[i].name %>">
+            <button type="submit" class="btn btn-success" name ="userType" value="admin">promote to admin</button>
+            <button type="submit" class="btn btn-danger" name ="userType"  value="user">Demote to User</button>
+        
+        </form>
+        <% } %> 
+    </ul>
+    <%- include("templates/footer") %> 

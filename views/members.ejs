@@ -1,0 +1,48 @@
+<%- include("templates/header") %> 
+    <h1>Welcome, <%= name %>!</h1>
+<p>Here's your meme for the day:</p>
+
+<!-- <ul>
+    <% images.forEach(image => { %>
+      <li><img src="<%= image %>" width="500" height="300"></li>
+    <% }); %>
+  </ul> -->
+
+  <div class="card-group">
+    <div class="card">
+      <img src="/debug.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">my first funny meme</p>
+      </div>
+      <div class="card-footer">
+       
+      </div>
+    </div>
+    <div class="card">
+      <img src="/eyes.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">my second favorite meme</p>
+      </div>
+      <div class="card-footer">
+     
+      </div>
+    </div>
+    <div class="card">
+      <img src="/web.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">The story of my life.</p>
+      </div>
+      <div class="card-footer">
+       
+      </div>
+    </div>
+  </div>
+</form>
+
+<form action="/logout" method="POST">
+    <button type="submit" class="btn btn-info" style="background-color: #b240d5;">logout</button>
+</form>
+<%- include("templates/footer") %> 
